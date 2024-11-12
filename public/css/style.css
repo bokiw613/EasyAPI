@@ -1,0 +1,132 @@
+/* Tambahkan prefiks .login-page ke semua elemen */
+.login-page {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: #f2f2f2;
+}
+
+.login-page .wrapper {
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .wrapper .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.login-page .wrapper form {
+  padding: 10px 30px 50px 30px;
+}
+
+.login-page .wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.login-page .wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.login-page .wrapper form .field input:focus,
+.login-page form .field input:valid {
+  border-color: #4158d0;
+}
+
+.login-page .wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.login-page form .field input:focus ~ label,
+.login-page form .field input:valid ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.login-page form .content {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-page form .content .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.login-page form .content input {
+  width: 15px;
+  height: 15px;
+}
+
+.login-page form .content label {
+  color: #262626;
+  padding-left: 5px;
+}
+
+.login-page form .field input[type="submit"] {
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: all 0.3s ease;
+}
+
+.login-page form .field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+.login-page form .signup-link {
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-page form .pass-link a,
+.login-page form .signup-link a {
+  color: #4158d0;
+  text-decoration: none;
+}
+
+.login-page form .pass-link a:hover,
+.login-page form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+
